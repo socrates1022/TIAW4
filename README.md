@@ -1,4 +1,4 @@
-#TIAW - Site
+TIAW - Site
 Repositório do GitHub, contendo a verção final do site sobre Procrastinação E Organização do Dia a Dia.
 Alunos integrantes da equipe
 Socrates https://github.com/socrates1022
