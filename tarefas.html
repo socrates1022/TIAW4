@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ReBuild YOUR ROUTINE</title>
+
+    <link rel="stylesheet" href="assets/styles/tarefas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/4458f38c76.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/944eb371a4.js'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+</head>
+
+<body translate="no">
+    <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+            <a href="#" target="_blank"
+                style="font-family:'Morning Routine Regular';font-weight:normal;font-size:24px;">ReBuild YOUR
+                ROUTINE.</a>
+        </div>
+        <div id="nav-mobile-section">
+            <div id="nav-link-section" class="nav-section">
+                <a href="sobrenos.html"><b>SOBRE NÓS</b></a>
+                <a href="index.html"><b>DICAS</b></a>
+            </div>
+            <div id="nav-social-section" class="nav-section">
+                <a href="lista.html">
+                    <i class="fa-regular fa-calendar"></i>
+                </a>
+                <a href="https://github.com/socrates1022/TIAW">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="Profile.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+            <span>MENU</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <section>
+        <div id="left-side" class="side">
+            <h2 class="title">
+                AGORA O MOMENTO É DE
+                <span class="fancy">laser</span>
+            </h2>
+        </div>
+        <div id="right-side" class="side">
+            <h2 class="title">
+                AGORA O MOMENTO É DE
+                <span class="fancy">dever</span>
+            </h2>
+        </div>
+    </section>
+
+
+    <script id="rendered">
+
+        /* -- MENU MOBILE -- */
+
+        const nav = document.querySelector("nav");
+
+        const handleNavToggle = () => {
+            nav.dataset.transitionable = "true";
+
+            nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
+        };
+
+        window.matchMedia("(max-width: 800px)").onchange = e => {
+            nav.dataset.transitionable = "false";
+
+            nav.dataset.toggled = "false";
+        };
+
+
+        const left = document.getElementById("left-side");
+
+        const handleMove = e => {
+            left.style.width = `${e.clientX / window.innerWidth * 100}%`;
+        }
+
+        document.onmousemove = e => handleMove(e);
+
+        document.ontouchmove = e => handleMove(e.touches[0]);
+    </script>
+</body>
+
+</html>

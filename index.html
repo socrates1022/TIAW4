@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ReBuild YOUR ROUTINE</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script type="text/javascript" id="rendered-js" src="assets/scripts/rendered.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js">
+        </script>
+    <script src="https://kit.fontawesome.com/4458f38c76.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/944eb371a4.js'></script>
+</head>
+
+<body translate="no">
+    <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+            <a href="index.html" target="_self"
+                style="font-family:'Morning Routine Regular';font-weight:normal;font-size:24px;">ReBuild YOUR
+                ROUTINE.</a>
+        </div>
+        <div id="nav-mobile-section">
+            <div id="nav-link-section" class="nav-section">
+                <a href="sobrenos.html"><b>SOBRE NÓS</b></a>
+                <a href="login.html"><b>TAREFAS</b></a>
+            </div>
+            <div id="nav-social-section" class="nav-section">
+                <a href="lista.html">
+                    <i class="fa-regular fa-calendar"></i>
+                </a>
+                <a href="https://github.com/socrates1022/TIAW">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="login.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+            <span>MENU</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+    <main>
+        <article data-index="0" data-status="active">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p>Tenha horários organizados para cada tarefa diária.</p>
+                <p>Cada horário deve ser de uso exclusivo para cada tarefa, por exemplo:</p>
+                <p><br><b>Lazer, Estudos, Trabalho e Tarefas Domésticas</b></p>
+                <p><br>Experimente estabelecer horários, períodos ou objetivos para o seu dia ou semana.</p>
+            </div>
+            <div class="article-title-section article-section">
+                <h2> Tenha sua rotina definida</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="1" data-status="inactive">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p>Arrumar a cama diariamente faz com que você já comece o dia organizado e com a primeira meta
+                    cumprida. Arrumar a cama é o primeiro incentivo para motivar a começar o dia com entusiasmo.</p>
+                <p><br><b>"Pequenos hábitos são os que mudam o mundo"</b></p>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Faça sua cama</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="2" data-status="inactive">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p>Ter horário fixos definidos para determinadas tarefas é importante para evitar imprevistos e
+                    estresse, condicionando o seu corpo.</p>
+                <p><br>Fazer as coisas sempre da mesma forma reduz os erros que
+                    cometemos durante a execução de tarefas, além de nos dar mais energia.</p>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Defina os horários</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="3" data-status="inactive">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p>Estabelecer metas para cumprir durante um período definido ajuda a manter o foco para concluir as
+                    tarefas.</p>
+                <p><br>O que importa é você ser honesto com as metas definidas com sua capacidade de
+                    concluí-las.<br><br><b>Não adie metas!</b></p>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Defina metas</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="4" data-status="inactive">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p><b>Trabalho&emsp;<i class="fa-solid fa-xmark"></i>&emsp;Descanso</b>
+                <p><br>O balanceamento é um cuidado essencial para organizar bem sua rotina. </p>
+                <p><br>Afinal, nesse ambiente,
+                    podemos ficar tentados ao excesso de atividades, sobrecarregado, ou até mesmo desocupado.</p>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Equilíbrio é o mais importante</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="5" data-status="inactive">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p><br>É essencial descobrir que tipo de planejamento funciona para você. Portanto, não adianta fazer
+                    como um conhecido ou pegar uma rotina pronta na internet. </p>
+                <p><br><b>Seja flexível!</b></p>
+                <p><br>Se a sua maior disposição
+                    for em um determinado horário, vale a pena deixar atividades complicadas para esse momento em
+                    que o foco é mais alto.</p>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Teste rotinas!</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="article-nav-button" type="button" onclick="handleRightClick()">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </article>
+    </main>
+
+    <script>
+
+        /* -- MENU MOBILE -- */
+
+        const nav = document.querySelector("nav");
+
+        const handleNavToggle = () => {
+            nav.dataset.transitionable = "true";
+
+            nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
+        };
+
+        window.matchMedia("(max-width: 800px)").onchange = e => {
+            nav.dataset.transitionable = "false";
+
+            nav.dataset.toggled = "false";
+        };
+        //# sourceURL=pen.js
+    </script>
+</body>
+
+</html>
